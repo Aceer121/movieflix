@@ -1,21 +1,21 @@
-import React from 'react';
-import { Fragment } from 'react';
-import { Outlet, Link } from 'react-router-dom';
-import { ReactComponent as movieLogo } from '../../assets/movie.svg'; 
-import './navigation.styles.scss';
+import React from "react";
+import { Fragment } from "react";
+import { Outlet, Link } from "react-router-dom";
+import "./navigation.styles.scss";
 
 const Navigation = () => {
   return (
     <Fragment>
-      <div className='navigation'>
-        <Link className='logo-container' to='/'>
-          <movie className='logo' style={{ width: '50px', height: '50px' }} /> {/* Ensure the SVG has dimensions */}
+      <div className="navigation">
+        <Link className="logo-container" to="/">
+          <movie className="logo" style={{ width: "50px", height: "50px" }} />{" "}
+          {/* Ensure the SVG has dimensions */}
         </Link>
-        <div className='nav-links-container'>
-          <Link className='nav-link' to='/about'>
+        <div className="nav-links-container">
+          <Link className="nav-link" to="/about">
             About
           </Link>
-          <Link className='nav-link' to='/signin'>
+          <Link className="nav-link" to="/signin">
             Sign In
           </Link>
         </div>
@@ -26,4 +26,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
