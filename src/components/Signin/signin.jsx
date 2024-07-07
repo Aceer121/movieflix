@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import './Signin.styles.scss';
-
+import React, { useState } from "react";
+import "./signin.styles.scss";
 
 const SignIn = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Sign-In Form Submitted', { email, password });
+    console.log("Sign-In Form Submitted", { email, password });
     // Handle sign-in logic here, for example, sending a request to your backend
   };
 
@@ -30,11 +29,11 @@ const SignIn = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <input
-          type="password"
-          placeholder="Confirm Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+            type="password"
+            placeholder="Confirm Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <button type="submit">Sign In</button>
         </form>
       </div>
