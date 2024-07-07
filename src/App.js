@@ -5,9 +5,10 @@ import About from "./components/About/About";
 import SignIn from "./components/SignIn/SignIn";
 import Navigation from "./components/Navigation/Navigation";
 
-const App = () => {
+function App() {
   return (
     <Router>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
@@ -17,6 +18,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
